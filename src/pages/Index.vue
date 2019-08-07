@@ -19,15 +19,17 @@
     <ul>
       <li><g-link to="/blog-html/blog-post-one" class="link">Dinner Night</g-link> </li>
       <li><g-link to="/blog-html/blog-post-two" class="link">Be Different</g-link> </li>
+      <li><g-link to="/blog/blog-post-one" class="link">VUE</g-link> </li>
+      <li><g-link to="/blog/blog-post-two" class="link">REACT</g-link> </li>
     </ul>
 
-    <h2>Automatic Blogroll</h2>
+    <!-- <h2>Automatic Blogroll</h2>
 
     <ul>
       <li v-for="post in $page.posts.edges" :key="post.id">
         <g-link :to="post.node.path" class="link">{{ post.node.title }}</g-link>
       </li>
-    </ul>
+    </ul> -->
 
     <p class="home-links">
       <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
@@ -36,20 +38,6 @@
 
   </Layout>
 </template>
-
-<page-query>
-query Posts {
-  posts: allPost {
-    edges {
-      node {
-        id,
-        title,
-        path
-      }
-    }
-  }
-}
-</page-query>
 
 <script>
 export default {
