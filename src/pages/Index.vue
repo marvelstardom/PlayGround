@@ -42,8 +42,8 @@ query Posts {
   posts: allPost {
     edges {
       node {
-        id
-        title
+        id,
+        title,
         path
       }
     }
