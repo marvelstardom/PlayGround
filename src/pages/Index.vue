@@ -37,17 +37,19 @@
   </Layout>
 </template>
 
-<page-query>query Posts {
+<page-query>
+query Posts {
   posts: allPost {
     edges {
       node {
-        path
         id
         title
+        path
       }
     }
   }
-}</page-query>
+}
+</page-query>
 
 <script>
 export default {
