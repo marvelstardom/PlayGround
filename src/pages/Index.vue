@@ -25,7 +25,7 @@
 
     <ul>
       <li v-for="post in $page.posts.edges" :key="post.id">
-        <g-link :to="post.node.path" class="link">{{ post.node.title }}</g-link>
+        <g-link :to="posts.node.path" class="link">{{ post.node.title }}</g-link>
       </li>
     </ul>
 
@@ -37,9 +37,7 @@
   </Layout>
 </template>
 
-<page-query>
-
-query Posts {
+<page-query>query Posts {
   posts: allPost {
     edges {
       node {
@@ -49,9 +47,7 @@ query Posts {
       }
     }
   }
-}
-
-</page-query>
+}</page-query>
 
 <script>
 export default {

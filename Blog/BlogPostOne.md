@@ -53,4 +53,4 @@ Whenever something is going to stay the same, use properties... Whenever it's go
 "onClick, onChange" an example of an event handler.
 
 
-<vue-disqus shortname="PlayGround" :identifier="$page.post.title"></vue-disqus>
+<!-- <vue-disqus shortname="PlayGround" :identifier="$page.post.title"></vue-disqus> -->

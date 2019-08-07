@@ -54,4 +54,4 @@ For loop contains the index, the condition and the increement in the function.
 A constant is like a container where we can put in variables, but the differnce is that it doesn't change.
 define() function is used to create a constant. 
 
-<vue-disqus shortname="PlayGround" :identifier="$page.post.title"></vue-disqus>
+<!-- <vue-disqus shortname="PlayGround" :identifier="$page.post.title"></vue-disqus> -->
