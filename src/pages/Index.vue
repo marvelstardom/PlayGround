@@ -25,7 +25,7 @@
 
     <ul>
       <li v-for="post in $page.posts.edges" :key="post.id">
-        <g-link :to="posts.node.path" class="link">{{ post.node.title }}</g-link>
+        <g-link :to="post.node.path" class="link">{{ post.node.title }}</g-link>
       </li>
     </ul>
 
